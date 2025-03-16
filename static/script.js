@@ -69,8 +69,8 @@ function greetingFunc() {
     console.log(greeting)
 }
 
-if (window.location.href.indexOf("index.html") > -1) {
+if (window.location.href.indexOf("index.html") > -1 || window.location.pathname === "/") {
     greetingFunc();
 } else {
-    console.log ("Not on index.html; greetingFunc() was not invoked.");
+    console.log("Not on index.html; greetingFunc() was not invoked.");
 }
