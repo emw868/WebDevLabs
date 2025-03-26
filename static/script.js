@@ -84,6 +84,19 @@ function showList() {
     document.getElementById('showListBtn').style.display = 'none';
 }
 
+function getAdvice() {
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => response.json())
+        .then(data => {
+            const advice = data.slip.advice;
+            document.getElementById('adviceText').innerText = advice;
+        })
+        .catch(error => {
+            document.getElementById('adviceText').innerText = 'Error: Could not retrieve advice.';
+            console.error('Error fetching advice:', error);
+        });
+}
+
 
 $(document).ready(function() {
     $('#readMore').click(function() {

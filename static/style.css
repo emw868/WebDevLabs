@@ -36,8 +36,8 @@ table tr:nth-child(even) {
 
 form * {
     display: block;
-    margin: auto;
-    text-align: center;
+    margin-left: 0;
+    text-align: left;
 }
 
 input[type="submit"] {
@@ -46,4 +46,42 @@ input[type="submit"] {
     border: none; 
     padding: 10px; 
     border-radius: 5px;
+}
+
+.funIMG {
+    border-radius: 10%;
+}
+
+/* Styles for the container in item4 */
+.container {
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Styles for the button inside the container (similar to contact form styling) */
+.container button {
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container button:hover {
+    opacity: 0.9;
+}
+
+/* Flexbox layout for main content areas */
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
 }

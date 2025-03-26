@@ -28,21 +28,38 @@
         </nav>
     </header>
 
-    <div class="main">
-        <h2>Things I Love To Do For Fun!</h2>
-        <button id="showListBtn" onclick="showList()">Click to see...</button>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Things I Love To Do For Fun!</h2>
+            <!-- <button id="showListBtn" onclick="showList()">Click to see...</button> -->
+            <!--
             <ul id="funList" style="display: none;">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
             </ul>
-        <ul>
-            <li>Playing Golf</li>
-            <li>Reading Various Books, Webnovels, and Webcomics</li>
-            <li>Exploring Cybersecurity Challenges</li>
-            <li>Experimenting with AI</li>
-            <li>Hiking and Outdoor Adventures</li>
-        </ul>
+            -->
+            <ul>
+                <li>Playing Golf</li>
+                <li>Reading Various Books, Webnovels, and Webcomics</li>
+                <li>Exploring Cybersecurity Challenges</li>
+                <li>Experimenting with AI</li>
+                <li>Hiking and Outdoor Adventures</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img class="funIMG" width = 200 height = 200 src="../static/fun.jpg" alt="Fun Image">
+        </div>
+        <div id="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ptk_1Dc2iPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
+        </div>
+        <div id="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
     </div>
     <footer>
         <p id="copyYear">Designed and Coded By Emma Wong</p>
